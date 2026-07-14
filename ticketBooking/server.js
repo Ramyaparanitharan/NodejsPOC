@@ -6,7 +6,7 @@ import connectDB from "./config/db.js";
 
 import eventRoutes from "./routes/eventRoutes.js";
 import seatRoutes from "./routes/seatRoute.js";
-// import bookingRoutes from "./routes/bookingRoutes.js";
+import bookingRoutes from "./routes/bookingRoute.js";
 
 dotenv.config();
 
@@ -18,7 +18,7 @@ app.use(express.json());
 // Routes
 app.use("/api/events", eventRoutes);
 app.use("/api/seats", seatRoutes);
-// app.use("/api/bookings", bookingRoutes);
+app.use("/api/bookings", bookingRoutes);
 
 const startServer = async () => {
   await connectDB();
