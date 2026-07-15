@@ -1,8 +1,8 @@
 {
-  "name": "authenticateapp",
+  "name": "ticketbooking",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Build a proof-of-concept ticket booking system where users can:",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,6 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.7.4",
-    "socket.io": "^4.8.3",
-    "socket.io-client": "^4.8.3"
+    "socket.io": "^4.8.3"
   }
 }
